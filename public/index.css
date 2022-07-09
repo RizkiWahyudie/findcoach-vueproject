@@ -1,0 +1,53 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* TheHeader.vue */
+.nav-header {
+    @apply xl:max-w-5xl xl:mx-auto mb-4;
+}
+.nav {
+    @apply bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded
+}
+.nav-flex {
+    @apply container flex flex-wrap justify-between items-center mx-auto
+}
+.nav-mobile {
+    @apply inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200;
+}
+.nav-textLogo {
+    @apply self-center text-xl font-semibold whitespace-nowrap
+}
+.nav-ul {
+    @apply flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium
+}
+.nav-nonActive{
+    @apply block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 md:hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0
+}
+.nav-active {
+    @apply block py-2 pr-4 pl-3 text-white bg-purple-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:hover:bg-blue-700 md:hover:bg-transparent md:focus:bg-transparent
+}
+/*  */
+
+/* BaseItem.vue */
+.frontend {
+    @apply bg-gradient-to-br from-purple-600 to-blue-500
+}
+.backend {
+    @apply bg-gradient-to-r from-cyan-500 to-blue-500
+}
+.career {
+    @apply bg-gradient-to-r from-purple-500 to-pink-500
+}
+/*  */
+
+/* CoachDetail.vue */
+.btnChat {
+    @apply flex justify-center text-red-700 hover:text-white border border-red-700 hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 pb-3 pt-2 text-center mr-2 mb-2 w-full
+}
+
+.btnChat:hover svg {
+    @apply fill-white
+}
