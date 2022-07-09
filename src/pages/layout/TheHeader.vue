@@ -17,7 +17,7 @@
                             <router-link to="/coaches" class="nav-nonActive" active-class="nav-active">All coach</router-link>
                         </li>
                         <li v-if="isLogin">
-                            <router-link to="/requests" class="nav-nonActive" active-class="nav-active">Requests</router-link>
+                            <router-link to="/requests" class="nav-nonActive" active-class="nav-active">Messages</router-link>
                         </li>
                         <li v-if="isLogin">
                             <button type="button" @click="isLogout" class="nav-nonActive" active-class="nav-active">Logout</button>

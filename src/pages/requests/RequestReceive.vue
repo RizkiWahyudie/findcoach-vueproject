@@ -4,9 +4,9 @@
             {{ errorMsg }}
         </base-error>
         <base-div>
-            <h3 class="text-purple-700 text-center italic text-xl font-medium">Requests Receive</h3>
+            <h3 class="text-purple-700 text-center italic text-xl font-medium">Message Receive</h3>
             <base-spinner v-if="isLoading" class="mt-6"></base-spinner>
-            <div v-else-if="message && message.length > 0">
+            <div v-else-if="filterMsg && filterMsg.length > 0">
                 <base-message
                     v-for="msg in filterMsg"
                     :key="msg.id"
@@ -19,7 +19,7 @@
             </div>
             <div v-else class="flex flex-wrap justify-center my-4">
                 <img class="w-1/4" src="../assets/no-results-found.png" alt="">
-                <h3 class="w-full text-center font-semibold text-lg">Haven't made a request yet</h3>
+                <h3 class="w-full text-center font-semibold text-lg">Haven't made a Message yet</h3>
             </div>
         </base-div>
     </div>
